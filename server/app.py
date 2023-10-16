@@ -1,8 +1,10 @@
+from myapp import create_app
 import os
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from models import db, User, Pic, Artist, UserArt, Sketch, Art
 
+app=create_app()
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL")
 #postgres://k_danz_2b14_user:LfX4jd3zeKSVkYANThBkeSNV7poCKzVF@dpg-ckmkuio710pc73d5jqv0-a.oregon-postgres.render.com/k_danz_2b14
