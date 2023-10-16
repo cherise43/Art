@@ -1,0 +1,23 @@
+/* Category.css */
+
+/* Category container styles */
+#catergory-container {
+  background-color: #2196f3; /* Blue background color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff; /* White text color */
+}
+
+/* Category title styles */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Category description styles */
+p {
+  font-size: 1.2rem;
+}
+  
