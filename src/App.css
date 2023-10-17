@@ -1,66 +1,103 @@
-/* Style the sketch container */
-.sketch-container {
+/* Apply general styles to the entire page */
+/* Style the navigation links */
+div {
+  background-color: #333;
+  padding: 10px;
   text-align: center;
-  background-color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+/* Style the navigation links */
+nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+/* Add an animation to the links */
+@keyframes linkPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+nav a:hover {
+  animation: linkPulse 0.5s infinite;
+}
+
+/* Style the Routes component */
+#root {
   padding: 20px;
 }
 
-/* Style the heading */
-.sketch-container h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 20px;
+/* Add styles to individual Route elements */
+Route {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Style the image grid */
-.image-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.image-grid img {
-  max-width: 100%;
-  height: auto;
-  margin: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-/* Style the comment form */
-.comment-form {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.comment-input {
-  width: 100%;
-  padding: 10px;
+/* Style the LoginPage component */
+LoginPage {
+  background-color: #f0f0f0;
+  padding: 20px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
-.comment-input::placeholder {
-  color: #888;
+/* Add animations to specific components */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.comment-input:focus {
-  border-color: #007bff;
-  outline: none;
+LoginPage {
+  animation: fadeIn 1s;
 }
-
-.submit-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.submit-button:hover {
-  background-color: #0056b3;
-}
-
-
 

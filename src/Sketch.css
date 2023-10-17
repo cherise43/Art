@@ -2,66 +2,66 @@
 
 /* Sketch container styles */
 .sketch-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Sketch title styles */
-  h2 {
-    font-size: 2rem;
-    color: #333; /* Dark gray text color */
-    margin-top: 20px;
-  }
-  
-  /* Image container styles */
-  .image-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  /* Individual image styles */
-  img {
-    max-width: 100%;
-    height: auto;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-  }
-  
-  /* Comment form styles */
-  #comment-form {
-    text-align: center;
-  }
-  
-  /* Comment input styles */
-  #comment-input {
-    width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    margin: 10px auto;
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
-  
-  /* Submit button styles */
-  #submit-button {
-    display: block;
-    width: 100%;
-    max-width: 200px;
-    margin: 10px auto;
-    padding: 10px;
-    background-color: #2196f3; /* Blue background color */
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  #submit-button:hover {
-    background-color: #1976d2; /* Darker blue on hover */
-  }
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Sketch title styles */
+h2 {
+  font-size: 2rem;
+  color: #333; /* Dark gray text color */
+  margin-top: 20px;
+}
+
+/* Image container styles */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual image styles */
+img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+/* Comment form styles */
+#comment-form {
+  text-align: center;
+}
+
+/* Comment input styles */
+#comment-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Submit button styles */
+#submit-button {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #2196f3; /* Blue background color */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submit-button:hover {
+  background-color: #1976d2; /* Darker blue on hover */
+}

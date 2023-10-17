@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import "./App.css"; 
+import "./Login.css";
 
 function LoginPage() {
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("")
+  const [password, setPassword] = useState("");
+
   const handleLogin = (e) => {
     e.preventDefault();
-
 
     if (email === "user@example.com" && password === "password") {
       alert("Login successful!");
@@ -16,32 +16,40 @@ function LoginPage() {
   };
 
   return (
-    <div id="login-container">
-      <h1>Login</h1>
-      <form id="login-form" onSubmit={handleLogin}>
+    <div className="login-container">
+      <h1 className="login-header">Login</h1>
+      <form className="login-form" onSubmit={handleLogin}>
         <div className="form-group">
-          <label htmlFor="email">Email:</label>
+          <label className="form-label" htmlFor="email">
+            Email:
+          </label>
           <input
             type="email"
             id="email"
             name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            className="form-input"
             required
           />
         </div>
         <div className="form-group">
-          <label htmlFor="password">Password:</label>
+          <label className="form-label" htmlFor="password">
+            Password:
+          </label>
           <input
             type="password"
             id="password"
             name="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            className="form-input"
             required
           />
         </div>
-        <button type="submit" id="login-button">Login</button>
+        <button type="submit" className="login-button">
+          Login
+        </button>
       </form>
     </div>
   );
